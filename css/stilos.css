@@ -27,6 +27,6 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    opacity: 0.09; /* Reduce la opacidad para dar efecto de marca de agua */
+    opacity: 0.2; /* Reduce la opacidad para dar efecto de marca de agua */
     pointer-events: none; /* Evita que el video interfiera con la interacción del usuario */
   }
