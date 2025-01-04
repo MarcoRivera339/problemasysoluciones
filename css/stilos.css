@@ -30,3 +30,63 @@
     opacity: 0.2; /* Reduce la opacidad para dar efecto de marca de agua */
     pointer-events: none; /* Evita que el video interfiera con la interacción del usuario */
   }
+
+  .btn {
+    border: 2px solid;
+    background-color: blue;
+    color: aliceblue;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    padding: 10px 20px;
+    display: inline-block; /* Para que se comporte como un botón */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+  }
+
+  .btn:hover {
+    background-color: darkblue; /* Cambia a un color más oscuro */
+    color: white; /* Cambia el color del texto */
+    border-color: white; /* Cambia el color del borde (opcional) */
+  }
+
+/* General Reset */
+.container{
+  margin: 0;
+  padding: 10px;
+  height: 170vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background: transparent;
+  color: white;
+  -webkit-text-stroke: 1px rgb(104, 103, 107); /* Grosor y color del borde */
+  overflow: hidden;
+  text-align: center;
+}
+
+
+/* Text Box */
+#text-box {
+  font-size: 2rem;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Words (Initial state) */
+.word {
+  opacity: 0;
+  transform: translateY(-50px);
+  display: inline-block;
+  animation: fadeInDrop 1s ease forwards;
+}
+
+/* Fade-In and Drop Animation */
+@keyframes fadeInDrop {
+  0% {
+      opacity: 0;
+      transform: translateY(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
